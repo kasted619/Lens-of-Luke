@@ -61,8 +61,7 @@
             width: 100vw;
             overflow: visible;
         }
-
-        .swiper img {
+            .swiper img {
             height: 80vh;
             width: auto;
         }
@@ -77,6 +76,7 @@
             width: auto !important;
             height: auto !important;
         }
+        
         .hero {
             overflow: hidden;
         }
@@ -110,7 +110,7 @@
 </head>
 <body>
 
-    <section class="header mx-3">
+    <section class="header mx-3 mx-md-5">
             <div class="py-4 d-flex flex-row align-items-center justify-content-between flex-wrap">
                 <a href="/" class="navbar-brand"><img src="img/logo.svg" alt="Lens of Luke"></a>
                 <ul class="list-inline list-unstyled mb-0">
@@ -209,6 +209,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            breakpoints: {
+                1024: {
+                    slidesPerView: "auto",
+                    loopedSlides: 3,
+                }
+            },
             slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
@@ -221,12 +227,7 @@
                 delay: 3500,
                 disableOnInteraction: false,
             },
-            breakpoints: {
-                768: {
-                    slidesPerView: "auto",
-                    loopedSlides: 3
-                }
-            }
+            
         });
 
     </script>

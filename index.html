@@ -20,6 +20,10 @@
         a {
             color: #D3DEC4;
         }
+        .navbar-brand img {
+            width: 200px;
+            align-self: center;
+        }
         .nav-link {
             font-size: 14px;
             font-weight: 200;
@@ -53,27 +57,75 @@
         .contact {
             padding: 80px 0;
         }
+        .swiper {
+            width: 100vw;
+            overflow: visible;
+        }
+
+        .swiper img {
+            height: 80vh;
+            width: auto;
+        }
+
+        .swiper .swiper-wrapper {
+            list-style: none;
+            padding: 0;
+        }
+
+        .swiper .swiper-slide {
+            display: block;
+            width: auto !important;
+            height: auto !important;
+        }
+        .hero {
+            overflow: hidden;
+        }
+        .footer {
+            background: #000000;
+            padding: 40px;
+            color: #888888;
+            font-size: 13px;
+        }
+        @media (max-width:767px) {
+            .navbar-brand {
+                width: 100%;
+            }
+            .navbar-brand img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .about {
+                padding: 50px 0;
+                margin-top: 50px;
+            }
+            .contact {
+                padding: 50px 0;
+            }
+            .swiper img {
+                height: 60vh;
+            }
+        }
     </style>
 
 </head>
 <body>
 
-    <section class="header mx-5">
-            <div class="py-4 d-flex flex-row align-items-center justify-content-between">
+    <section class="header mx-3">
+            <div class="py-4 d-flex flex-row align-items-center justify-content-between flex-wrap">
                 <a href="/" class="navbar-brand"><img src="img/logo.svg" alt="Lens of Luke"></a>
                 <ul class="list-inline list-unstyled mb-0">
                     <li class="list-inline-item">
-                        <a href="#about" class="nav-link p-2">About</a>
+                        <a href="#about" class="nav-link px-2">About</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#contact" class="nav-link p-2">Contact</a>
+                        <a href="#contact" class="nav-link px-2">Contact</a>
                     </li>
                 </ul>
-                <a href="#instagram"><img src="img/ig.png" alt="" width="24"></a>
+                <a  href="https://instagram.com/lensofluke.5d" target="_blank"><img src="img/ig.png" alt="" width="24"></a>
             </div>
     </section>
 
-    <section class="hero mx-5 mt-5">
+    <section class="hero mx-3 mx-md-5">
         <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -88,9 +140,7 @@
               <div class="swiper-slide">
                 <img src="img/slide-4.jpg" alt="" class="w-100">
               </div>
-              <div class="swiper-slide">
-                <img src="img/slide-5.jpg" alt="" class="w-100">
-              </div>
+              
               <div class="swiper-slide">
                 <img src="img/slide-6.jpg" alt="" class="w-100">
               </div>
@@ -101,49 +151,53 @@
                 <img src="img/slide-8.jpg" alt="" class="w-100">
               </div>
               <div class="swiper-slide">
+                <img src="img/slide-5.jpg" alt="" class="w-100">
+              </div>
+              <div class="swiper-slide">
                 <img src="img/slide-9.jpg" alt="" class="w-100">
               </div>
             </div>
         </div>
-        <div class="position-relative d-flex mt-5">
+        <div class="position-relative d-flex mt-4 mt-md-5">
             <div class="swiper-button-prev p-3 me-2"></div>
             <div class="swiper-button-next p-3 ms-2"></div>
         </div>
     </section>
 
-    <section class="about px-5" id="about">
+    <section class="about px-3 px-md-5" id="about">
         <div class="row gx-5">
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-8 d-flex align-items-center">
                 <div>
                     <h2 class="mb-4">About</h2>
                     <h3 class="mb-4">Meet Luke Pugh</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam maximus felis quis convallis. Nunc malesuada purus in justo congue pulvinar. Morbi convallis sollicitudin felis, et semper justo ultricies non. Nulla facilisi. Ut vel mi in libero pellentesque posuere id non lacus. Integer sollicitudin tincidunt mattis. Proin vehicula, sem ac aliquam euismod, est augue tempor felis, at tristique erat elit et ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim auctor justo et tempor. Praesent vel odio eleifend, euismod ipsum vitae, eleifend odio. Mauris sed neque nunc.</p>
-                
-                    <h3 class="mt-5 mb-4">The Gear</h3>
-                    <p>Canon 5D MK1 / Canon 50mm 1.8f / Canon 200mm 2.8f / Canon 50mm 1.8f / Canon 200mm 2.8f /  Canon 50mm 1.8f / Canon 200mm 2.8f /  Canon 50mm 1.8f / Canon 200mm 2.8f / </p>    
+                    <p>I offer a variety of photography services based around the Canon 5D also known as "The Classic". I am based out of San Diego California, however my photography takes me around the globe. I shoot solely on the venerable Canon 5D Classic which I have become an expert with over the years. During the span of my photography career I have curated a collection of these special cameras so as to ensure a steady supply of premium bodies as I create hundreds of thousands of images per year from small newspapers to corporate ads. If you are interested in owning one of these classic Canon icons please inquire below. I offer a sourcing service & also have a large selection of 5D classic bodies of only the highest quality. </p>
+                    <p>My spark for photography started at the end of the film era in the late 90's. I was  involved in my highschool photo lab & spent any free time in the darkroom developing images. With a unique look, the film's ability to portray exquisite colors & its characteristic grain enthralled me. Shooting film in those days was almost a dark art & not to mention exorbitantly expensive. I remember sitting down & running the numbers only to realize this hobby of mine was running me an average of $1.25 per image I shot. Quite unfeasible for a hobby in the late 90's with no real income. As the dawn of a new century started I found myself in college, still with the burning passion to create beautiful images through these magical black boxes we call cameras. I was not in a position to own a camera let alone the extrapolated cost moving forward. It was then during a college course I sat in on with a friend that changed my life. The instructor brought in what could only be described as a magic box. I saw my first consumer level digital camera from a manufacture I was already familiar with. The instructor showed us the new digital marvel fresh from Japan which would soon take the world by storm. It was a brand new Canon 5D. Hooked up to a then new & very large cathode ray television the instructor let off a few shots & captured a few images of students in the front row.  The images captured were instantly portrayed on the television in front of the class. The instructor then printed the images & passed them around for the class to see. Everyone was in absolute awe. In less time than it would take to open a box of film & load a camera with said film, we witnessed a digital camera capture images & print them. To say I felt as though I'd stepped into the future that day is an understatement. The images in my hand carried an uncanny resemblance to film however. The exquisite colors, the slight oxymoronic soft grain images seemed so familiar. I was instantly in love. The Canon 5D carried a heavy price with all that magic it possessed. At $3,299 for a body alone without a lens was a tough pill to swallow. In time I would acquire my very own Canon 5D & capture countless images through that fantastic sensor. Images I would build a photography career on & capturing images the world over. </p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <img src="img/luke.jpg" alt="" class="w-100">
             </div>
         </div>
     </section>
 
-    <section class="contact px-5" id="contact">
+    <section class="contact px-3 px-md-5" id="contact">
         <h2 class="mb-4">Contact</h2>
         <p class="mb-4">Currently accepting new clientele for 2025 Summer.</p>
-        <p class="lead text-uppercase mb-0">Phone / 619-555-5555</p>
-        <p class="lead text-uppercase mb-0">Email / <a href="#">luke@lensofluke.com</a></p>
-        <p class="lead text-uppercase">Instagram / <a href="#">@Lensofluke</a></p>
+        <p class="text-uppercase mb-0">Phone / 858.276.1989</p>
+        <p class="text-uppercase mb-0">Email / <a href="#">luke@lensofluke.com</a></p>
+        <p class="text-uppercase">Instagram / <a href="https://instgram.com/lensofluke.5d" target="_blank">@Lensofluke</a></p>
+    </section>
+
+    <section class="footer px-3 px-md-5">
+        <p class="mb-0">&copy; 2025 Lens of Luke - All Rights Reserved</p>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            centeredSlides: true,
-            slidesPerView: 3,
-            spaceBetween: 15,
+            slidesPerView: "auto",
+            spaceBetween: 10,
             loop: true,
             loopedSlides: 3,
             navigation: {

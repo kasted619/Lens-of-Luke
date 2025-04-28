@@ -183,8 +183,8 @@
                 <div>
                     <h2 class="mb-4">About</h2>
                     <h3 class="mb-4">Meet Luke Pugh</h3>
-                    <p>I offer a variety of photography services based around the Canon 5D also known as "The Classic". I am based out of San Diego California, however my photography takes me around the globe. I shoot solely on the venerable Canon 5D Classic which I have become an expert with over the years. During the span of my photography career I have curated a collection of these special cameras so as to ensure a steady supply of premium bodies as I create hundreds of thousands of images per year from small newspapers to corporate ads. If you are interested in owning one of these classic Canon icons please inquire below. I offer a sourcing service & also have a large selection of 5D classic bodies of only the highest quality. </p>
-                    <p>My spark for photography started at the end of the film era in the late 90's. I was  involved in my highschool photo lab & spent any free time in the darkroom developing images. With a unique look, the film's ability to portray exquisite colors & its characteristic grain enthralled me. Shooting film in those days was almost a dark art & not to mention exorbitantly expensive. I remember sitting down & running the numbers only to realize this hobby of mine was running me an average of $1.25 per image I shot. Quite unfeasible for a hobby in the late 90's with no real income. As the dawn of a new century started I found myself in college, still with the burning passion to create beautiful images through these magical black boxes we call cameras. I was not in a position to own a camera let alone the extrapolated cost moving forward. It was then during a college course I sat in on with a friend that changed my life. The instructor brought in what could only be described as a magic box. I saw my first consumer level digital camera from a manufacture I was already familiar with. The instructor showed us the new digital marvel fresh from Japan which would soon take the world by storm. It was a brand new Canon 5D. Hooked up to a then new & very large cathode ray television the instructor let off a few shots & captured a few images of students in the front row.  The images captured were instantly portrayed on the television in front of the class. The instructor then printed the images & passed them around for the class to see. Everyone was in absolute awe. In less time than it would take to open a box of film & load a camera with said film, we witnessed a digital camera capture images & print them. To say I felt as though I'd stepped into the future that day is an understatement. The images in my hand carried an uncanny resemblance to film however. The exquisite colors, the slight oxymoronic soft grain images seemed so familiar. I was instantly in love. The Canon 5D carried a heavy price with all that magic it possessed. At $3,299 for a body alone without a lens was a tough pill to swallow. In time I would acquire my very own Canon 5D & capture countless images through that fantastic sensor. Images I would build a photography career on & capturing images the world over. </p>
+                    <p>I’m a photographer based in San Diego, California, though my work often takes me around the world. I specialize in using the Canon 5D, known as “The Classic,” and have spent years mastering this legendary camera. Over time, I’ve built a collection of these cameras to ensure I always have top-quality gear for my work, which spans from small newspapers to large corporate projects. If you’re interested in owning a Canon 5D Classic, I offer a sourcing service and have a selection of premium bodies available—please inquire below.</p>
+                    <p>My passion for photography began in the late ’90s during the final years of the film era. I spent countless hours in my high school darkroom, fascinated by film’s unique colors and texture, despite the high cost—about $1.25 per shot. While in college, I discovered digital photography when a professor introduced a groundbreaking camera: the Canon 5D. Seeing instant images displayed and printed was like witnessing the future. Yet, the 5D’s digital images still held the rich, film-like quality I loved. Though it came with a hefty price tag, I eventually purchased my own Canon 5D, and it became the foundation of my photography career—capturing countless moments across the globe.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -209,10 +209,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            slidesPerView: "auto",
+            slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
-            loopedSlides: 3,
+            loopedSlides: 1,
             navigation: {
                 nextEl: '.swiper-button-next', 
                 prevEl: '.swiper-button-prev',
@@ -221,6 +221,12 @@
                 delay: 3500,
                 disableOnInteraction: false,
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: "auto",
+                    loopedSlides: 3
+                }
+            }
         });
 
     </script>
